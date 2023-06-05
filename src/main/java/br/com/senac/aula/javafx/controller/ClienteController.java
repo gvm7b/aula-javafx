@@ -42,7 +42,7 @@ public class ClienteController {
 
     private int index = -1;
 
-//alteração
+
 
     @FXML
     public void initialize() {
@@ -98,6 +98,10 @@ public class ClienteController {
     }
 
     public void executarExcluir(){
+        Alert alertaExcluir = new Alert(Alert.AlertType.CONFIRMATION);
+        alertaExcluir.setTitle("Confirmação de Exclusão");
+        alertaExcluir.setHeaderText("Confirmar excluir");
+
         if(index > -1){
 
             //tabelaClientes.getItems().remove(index);
