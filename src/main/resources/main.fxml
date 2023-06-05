@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.senac.aula.javafx.controller.ClienteController">
+   <children>
+      <AnchorPane prefHeight="194.0" prefWidth="838.0">
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" text="Nome" />
+            <TextField fx:id="nome" layoutX="17.0" layoutY="23.0" prefHeight="25.0" prefWidth="446.0" />
+            <Label layoutX="16.0" layoutY="57.0" text="Documento" />
+            <TextField fx:id="documento" layoutX="17.0" layoutY="74.0" prefHeight="25.0" prefWidth="446.0" />
+            <Button fx:id="btnOk" layoutX="17.0" layoutY="149.0" mnemonicParsing="false" onAction="#executarOk" text="Ok" />
+            <Label layoutX="17.0" layoutY="99.0" text="RG" />
+            <TextField fx:id="rg" layoutX="17.0" layoutY="116.0" prefHeight="25.0" prefWidth="446.0" />
+            <Button fx:id="btnExcluir" layoutX="60.0" layoutY="149.0" mnemonicParsing="false" onAction="#executarExcluir" text="Excluir" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TableView fx:id="tabelaClientes" layoutX="6.0" layoutY="-3.0" prefHeight="184.0" prefWidth="525.0">
+              <columns>
+                <TableColumn fx:id="colunaNome" prefWidth="156.0" text="Nome" />
+                <TableColumn fx:id="colunaDocumento" prefWidth="200.0" text="Documento" />
+                  <TableColumn fx:id="colunaRg" prefWidth="168.0" text="RG" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
